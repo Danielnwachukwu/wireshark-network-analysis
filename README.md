@@ -1,5 +1,5 @@
 Wireshark Network Traffic Analysis Lab
- Objective
+Objective
 
 To capture and analyze network traffic using Wireshark, focusing on reconnaissance detection, packet inspection, and identifying security vulnerabilities through packet-level inspection.
 
@@ -8,9 +8,11 @@ Wireshark
 Kali Linux
 Nmap
 DVWA (Damn Vulnerable Web Application)
+
  Scenario 1: Nmap SYN Scan Analysis
 
 A TCP SYN scan was performed to identify open ports on the target system.
+
 
 Key Findings:
 
@@ -22,20 +24,20 @@ Open ports identified via SYN-ACK responses:
 443 (HTTPS)
 Closed ports identified via RST responses:
 23 (Telnet)
-Screenshots:
+
+### Screenshots:
+
 
 SYN scan detection using Wireshark filter:
-
-
+![SYN Scan](screenshots/nmap/syn_scan.png)
 
 
 Open ports identified via SYN-ACK responses:
-
-
+![SYN-ACK](screenshots/nmap/syn_ack.png)
 
 
 Closed ports identified via RST responses:
-
+![RST Packets](screenshots/nmap/rst_packets.png)
 
 
 
@@ -58,16 +60,15 @@ Data transmitted using:
 
 application/x-www-form-urlencoded
 No encryption used (HTTP instead of HTTPS)
-Screenshots:
-
+### Screenshots:
 HTTP POST request captured:
 
-
+![HTTP POST](screenshots/http/post_request.png)
 
 
 Credentials exposed in packet payload:
 
-
+![Credentials](screenshots/http/credentials.png)
 
 
 Scenario 3: TCP Conversation Analysis
@@ -87,7 +88,7 @@ Data transfer (14KB–31KB) confirms web interaction and content delivery
 Communication follows a client-server model:
 Client sends requests (small packets)
 Server responds with larger payloads
-Screenshots:
+
 
 
 
@@ -115,8 +116,12 @@ Minor UDP traffic includes:
 DNS
 DHCP
 SSDP
-Screenshots:
 
+### Screenshots:
+
+![Conversations](screenshots/statistics/conversations.png)
+
+![Protocol Hierarchy](screenshots/statistics/protocol.png)
 
 
 
