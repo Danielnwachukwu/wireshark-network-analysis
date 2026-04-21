@@ -116,10 +116,9 @@ Minor UDP traffic includes:
 DNS
 DHCP
 SSDP
-
 ### Screenshots:
-![Conversations](screenshots/statistics/conversations.png)
 
+![Conversations](screenshots/statistics/conversations.png)
 
 ![Protocol Hierarchy](screenshots/statistics/protocol.png)
 
